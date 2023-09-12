@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equive="X-UA-Compaitable" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HCL login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            body{
+                background-image: url(bg.jpg);background-attachment: fixed;background-repeat: no-repeat;background-size: 100% 100%;
+            }
+            .form-box{
+                width: 400px;
+                margin:12% auto;
+                padding:50px o;
+                color:rgba(0,0,0,0.5);
+                background: #fff;
+                box-shadow: 0 0 20px 20px #fff;
+            }
+            .input-box{
+                margin: 31px auto;
+                width:80%;
+                border-bottom: 1px solid rgba(0,0,0,0.8);
+                padding-top: -15px;
+                padding-bottom: 5px;
+            }
+            ::placeholder{
+                color: rgba(0,0,0,0.5)
+            }
+            .login-btn{
+                margin: 40px auto 20px;
+                width:80%;
+                display:block;
+                outline:none;
+                padding: 10px 0;
+                border:1px solid rgba(0,0,0,0.8);
+                cursor: pointer;
+                background: transparent;
+                color: rgba(0,0,0,0.5);
+                font-size: 16px;
+            }
+            .login-btn:hover{
+                color:blue
+            }
+            .login-btn:active{
+                background-color: blue;
+                color: #fff;
+            }
+            .fa{
+                margin-left: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <div class="form-box">
+            <h1 style="color: blue; font-family: Arial, Helvetica, sans-serif;text-align: center;padding-top: 10px;"><i><b>HCL</b></i></h1>
+            <div class="input-box">
+                <i class="fa fa-user"></i>
+            <select id="type" name="type" style="width:90%;border: none;outline: none;background: transparent;color:rgba(0,0,0,0.5);">
+                <option style="background-color: rgba(0,0,0,0.5);">Admin</option>
+                <option style="background-color: rgba(0,0,0,0.5)">Interviewer</option>
+                
+            </select>
+            </div>
+            
+            <div class="input-box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" id="emailid" name="emailid" placeholder="Email ID" style="width:90%;border: none;outline: none;background: transparent;color:rgba(0,0,0,0.8);">
+            </div>
+            
+            <div class="input-box">
+                <i class="fa fa-key"></i>
+            <input type="password" id="pass" name="pass" placeholder="Password" style="width:90%;border: none;outline: none;background: transparent;color:rgba(0,0,0,0.8);">
+            </div>
+            
+            <div style="text-align: center;padding-bottom: 5px;">
+                <button type="button"  class="login-btn">LOGIN</button>
+                <a href="newacc.html" style="color:rgba(0,0,0,0.5);">
+                <h4 style="text-align: center;"><ins>create new account</ins></h4>
+                </a>
+            </div>
+ 
+
+        </div>
+        </form>
+    </body>
+</html>
